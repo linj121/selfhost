@@ -1,0 +1,4 @@
+**/container-data/*
+**/docker-data/*
+**/.env
+**/mailserver.env

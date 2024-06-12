@@ -1,0 +1,27 @@
+auth.joshlin.me {
+	reverse_proxy http://keycloak:8080
+}
+
+kb.joshlin.me {
+	reverse_proxy http://outline
+}
+
+kbdata-admin.joshlin.me {
+	@privateSubnets {
+		remote_ip 76.68.102.201
+	}
+	reverse_proxy @privateSubnets http://outline_minio:9001
+}
+
+kbdata.joshlin.me {
+	reverse_proxy http://outline_minio:9000
+}
+
+git.joshlin.me {
+    reverse_proxy http://gitea:3000
+}
+
+mail.joshlin.me {
+	
+  respond "Hello DMS"
+}

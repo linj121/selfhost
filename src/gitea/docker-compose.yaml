@@ -1,0 +1,18 @@
+services:
+  gitea:
+    image: gitea/gitea
+    container_name: gitea
+    environment:
+      - USER_UID=1000
+      - USER_GID=1000
+    restart: always
+    networks:
+      - reverseproxy-nw
+    volumes:
+      - ./container-data:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
+
+networks:
+  reverseproxy-nw:
+    external: true
