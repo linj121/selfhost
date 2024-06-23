@@ -54,7 +54,7 @@ nsd.reload:
 # PROJECTS_host_02 = caddy syncthing nsd gatus
 # PROJECTS_host_03 = caddy syncthing sshwifty
 # PROJECTS_host_04 = caddy syncthing seafile joplin gitea photoprism borgbackup smokeping samba
-PROJECTS_josh_ashburn = caddy mailserver keycloak outline gitea
+PROJECTS_josh_ashburn = caddy mailserver keycloak outline gitea vizonapi
 PROJECTS_hwsrv_996597.hostwindsdns.com = caddy mailserver outline
 
 # show project list
